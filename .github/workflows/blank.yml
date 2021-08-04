@@ -21,5 +21,4 @@ jobs:
         
       - name: Run a one-line scripts
         run: |
-          gnome-open https://www.youtube.com/?gl=UA&hl=uk
           python -m webbrowser "https://www.youtube.com/?gl=UA&hl=uk"
