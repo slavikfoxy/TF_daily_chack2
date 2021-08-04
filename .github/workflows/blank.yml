@@ -17,4 +17,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout master
-        run: echo "dd#"
+        run: echo "time 00:00"
