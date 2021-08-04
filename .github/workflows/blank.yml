@@ -29,7 +29,7 @@ jobs:
           python -m webbrowser "https://www.youtube.com/?gl=UA&hl=uk"
           
   build_2:
-   runs-on: ubuntu-latest
-    steps:
+   runs-on: windows-latest
+  steps: 
      - name: Run a one-line scripts
         run: start https://stackoverflow.com
