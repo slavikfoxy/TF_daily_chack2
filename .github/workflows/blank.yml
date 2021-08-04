@@ -1,0 +1,22 @@
+name: TF_checker
+
+on:
+  #schedule:
+  #- cron: "* * * * *" 
+   # - cron: "0 16 * * *"  # scheduled at 06:00 (UTC+8) everyday
+  push:
+   branches:
+     -main
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build-1:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Run a one-line scripts
+        run: |
+          echo "https://www.youtube.com/?gl=UA&hl=uk"
+          xdg-open https://www.youtube.com/?gl=UA&hl=uk
+          gnome-open https://www.youtube.com/?gl=UA&hl=uk
+          python -m webbrowser "https://www.youtube.com/?gl=UA&hl=uk"
