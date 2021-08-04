@@ -21,7 +21,5 @@ jobs:
         
       - name: Run a one-line scripts
         run: |
-          echo "https://www.youtube.com/?gl=UA&hl=uk"
-          xdg-open https://www.youtube.com/?gl=UA&hl=uk
           gnome-open https://www.youtube.com/?gl=UA&hl=uk
           python -m webbrowser "https://www.youtube.com/?gl=UA&hl=uk"
