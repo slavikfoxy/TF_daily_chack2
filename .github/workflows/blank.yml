@@ -1,11 +1,11 @@
 name: "TF_checker"
 
 on:
-  push:
-   branches:
-     -main
-  #schedule:
-  # - cron: "* * * * *"  # scheduled at 06:00 (UTC+8) everyday
+  #push:
+   #branches:
+     #-main
+  schedule:
+    - cron: "13 17 * * *"  # scheduled at 06:00 (UTC+8) everyday
   workflow_dispatch:
 
 env:
