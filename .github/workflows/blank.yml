@@ -11,7 +11,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
+      - name: Checkout master
+        uses: actions/checkout@v2
+        
       - name: Run a one-line scripts
         run: |
           echo "https://www.youtube.com/?gl=UA&hl=uk"
