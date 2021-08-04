@@ -5,7 +5,7 @@ on:
    #branches:
      #-main
   schedule:
-    - cron: "13 17 * * *"  # scheduled at 06:00 (UTC+8) everyday
+    - cron: "00 * * * *"  # scheduled at 06:00 (UTC+8) everyday
   workflow_dispatch:
 
 env:
@@ -17,23 +17,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout master
-        uses: actions/checkout@v2
-        
-      - name: Set up python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
-             
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-        
-      - name: Run my script ()()()()()()()()
-        env:
-          USER_AGENT: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0'
-        run: |
-          python3 ./pyscript.py
-          python -m webbrowser "https://tf.avergame.com/vk/api_v8.php?metod=load&uid=89423931&nocache=2340972&data=%7B%22info%22%3A%7B%22name%22%3A%22%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%96%D0%B9%20%D0%9E%D0%BB%D1%96%D0%B9%D0%BD%D0%B8%D0%BA%22%2C%22reffer%22%3A%22%22%2C%22friends%22%3A0%2C%22sex%22%3A%220%22%7D%7D&v=8%2E5&sig=154b8246a2690b81dc6b50755b2ef23f&time=1626602592"
-          
+        run: echo "dd#"
