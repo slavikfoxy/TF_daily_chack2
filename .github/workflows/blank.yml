@@ -6,7 +6,7 @@ on:
      #-main
   schedule:
     - cron: "30 14 * * *"  # scheduled at 06:00 (UTC+8) everyday
-  #workflow_dispatch:
+  workflow_dispatch:
 #env:
 #  RUN_ENV: 'prod'
 
