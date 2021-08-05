@@ -5,8 +5,8 @@ on:
    #branches:
      #-main
   schedule:
-    - cron: "46 13 * * *"  # scheduled at 06:00 (UTC+8) everyday
-  workflow_dispatch:
+    - cron: "48 13 * * *"  # scheduled at 06:00 (UTC+8) everyday
+  #workflow_dispatch:
 #env:
 #  RUN_ENV: 'prod'
 
